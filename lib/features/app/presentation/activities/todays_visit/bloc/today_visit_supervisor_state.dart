@@ -1,0 +1,95 @@
+import 'package:equatable/equatable.dart';
+import 'package:work_diary/core/utils/constants.dart';
+import 'package:work_diary/core/widgets/dropdown_search.dart';
+import 'package:work_diary/features/app/domain/entities/today_visit_plan_response.dart';
+import 'package:work_diary/features/app/domain/entities/visit_status.dart';
+
+class TodaysVisitStateSuperVisor extends Equatable {
+  const TodaysVisitStateSuperVisor(
+      {this.date = '',
+      this.todayVisits = const TodaysVisitResponse(),
+      this.visitStatus = const VisitStatus(),
+      this.visitStatusList = const [DropdownItem(name: 'Filter by', value: -1)],
+      this.selectedVisitStatus = '',
+      this.selectedDate = -1,
+      this.dateList = dateItemList,
+      this.planListType = "Today's Visit Plan",
+      this.page = 1,
+      this.isLoading = false,
+      this.isEndList = false,
+      this.isSupervisor = false,
+      this.selectedTab = 0,
+      this.userType = 'as_supervisor',
+      this.selectedStatus = -1,
+      this.incrementLoader = false});
+
+  final String date;
+  final TodaysVisitResponse todayVisits;
+  final VisitStatus visitStatus;
+  final List<DropdownItem> visitStatusList;
+  final String selectedVisitStatus;
+  final int selectedDate;
+  final List<DropdownItem> dateList;
+  final String planListType;
+  final int page;
+  final bool isLoading, isEndList, isSupervisor;
+  final int selectedTab;
+  final String userType;
+  final int selectedStatus;
+  final bool incrementLoader;
+
+  TodaysVisitStateSuperVisor copyWith(
+      {String? date,
+      TodaysVisitResponse? todayVisits,
+      Summery? summery,
+      VisitStatus? visitStatus,
+      List<DropdownItem>? visitStatusList,
+      String? selectedVisitStatus,
+      int? selectedDate,
+      List<DropdownItem>? dateList,
+      String? planListType,
+      int? page,
+      bool? isLoading,
+      bool? isEndList,
+      bool? isSupervisor,
+      bool? isOwn,
+      int? selectedTab,
+      int? selectedStatus,
+      bool? incrementLoader}) {
+    return TodaysVisitStateSuperVisor(
+        date: date ?? this.date,
+        todayVisits: todayVisits ?? this.todayVisits,
+        visitStatus: visitStatus ?? this.visitStatus,
+        visitStatusList: visitStatusList ?? this.visitStatusList,
+        selectedVisitStatus: selectedVisitStatus ?? this.selectedVisitStatus,
+        selectedDate: selectedDate ?? this.selectedDate,
+        dateList: dateList ?? this.dateList,
+        planListType: planListType ?? this.planListType,
+        page: page ?? this.page,
+        isLoading: isLoading ?? this.isLoading,
+        isEndList: isEndList ?? this.isEndList,
+        isSupervisor: isSupervisor ?? this.isSupervisor,
+        selectedTab: selectedTab ?? this.selectedTab,
+        selectedStatus: selectedStatus ?? this.selectedStatus,
+        incrementLoader: incrementLoader ?? this.incrementLoader);
+  }
+
+  @override
+  List<Object> get props => [
+        date,
+        todayVisits,
+        visitStatus,
+        visitStatusList,
+        selectedVisitStatus,
+        selectedDate,
+        dateList,
+        planListType,
+        page,
+        isLoading,
+        isEndList,
+        isSupervisor,
+        selectedTab,
+        selectedStatus,
+        incrementLoader
+      ];
+}

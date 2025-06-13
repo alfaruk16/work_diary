@@ -1,0 +1,23 @@
+import 'package:flutter/material.dart';
+
+const bDarkBlue = Color(0xFF0D3FE9);
+const bBlue = Color(0xFF1D68F5);
+const bLightBlue = Color(0xFF5076ED);
+const bLightBlueOne = Color(0xFFB9C9FB);
+const bSkyBlue = Color(0xFF42B9E0);
+const bYellow = Color(0xFFF9C529);
+const bGreen = Color(0xFF39BF5D);
+const bBlack = Color(0xFF333741);
+const bGray = Color(0xFF8A91A8);
+const bDark = Color(0xFF3B4B5C);
+const bWhite = Color(0xFFFFFFFF);
+const bWhiteGray = Color(0xFFF2F2F2);
+const bLightGray = Color(0xFFABADB4);
+const bLightBlue1 = Color(0xFFB9C9FB);
+const bDarkRed = Color(0xFFE33F3B);
+const bLightRed = Color(0xFFFF4841);
+const bExtraLightGray = Color(0xFFD3D3D3);
+const bStroke1 = Color(0xFFEEEEEE);
+const bInputstroke = Color(0xFFDBDBDB);
+const bDarkGray = Color(0xFF6F758A);
+const bBorderColor = Color(0xFFE5E5E5);
