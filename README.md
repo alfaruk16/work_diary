@@ -10,7 +10,7 @@ The project follows the Clean Architecture principles, separating the app into d
 - **Domain Layer**: Contains business logic and use cases.
 - **Data Layer**: Manages data sources such as APIs and local databases.
 
-![Architecture](images/project_architecture.png?raw=true)
+[![Architecture](images/project_architecture.png?raw=true)](https://github.com/ntminhdn/Flutter-Bloc-CleanArchitecture/blob/master/images/project_architecture.png?raw=true)
 
 ## Features
 
